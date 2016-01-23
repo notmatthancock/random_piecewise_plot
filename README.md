@@ -1,7 +1,5 @@
 Create random piecewise plots with Python. Dependencies are `matplotlib`, `numpy`, and `scipy`.
 
-`example1.py`:
-
     import matplotlib.pyplot as plt
     import random_piecewise_plot as rpp
 
@@ -11,4 +9,16 @@ Create random piecewise plots with Python. Dependencies are `matplotlib`, `numpy
     plt.tight_layout()
     plt.show()
 
+![](https://raw.githubusercontent.com/notmatthancock/random_piecewise_plot/master/example1.png)
 
+    import matplotlib.pyplot as plt
+    import random_piecewise_plot as rpp
+
+    fig = plt.figure(figsize=(11,10))
+    for i in range(9):
+        ax  = fig.add_subplot(3,3,i+1)
+        rpp.random_piecewise_plot(ax)
+    plt.tight_layout()
+    plt.show()
+
+![](https://raw.githubusercontent.com/notmatthancock/random_piecewise_plot/master/example2.png)
